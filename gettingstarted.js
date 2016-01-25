@@ -6,8 +6,8 @@ var users = [
         { id: 24, username: "linda",  active: false}
     ];
 
-function(users) {
-    _.filter(users, { return 'active' === true });
+var worker = function(users) {
+  return _.filter(users, { 'active': true });
 };
 
-module.exports = users;
+module.exports = worker;
